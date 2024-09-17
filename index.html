@@ -22,13 +22,9 @@
       gesture-detector
       id="scene"
     >
-      <a-assets>
-        <a-asset-item
-          id="bowser"
-          src="burger.glb"
-        >
-        </a-asset-item>
-      </a-assets>
+     <a-assets>
+      <img id="my-image" src="image.png">
+    </a-assets>
 
       <a-marker
         type="pattern"
@@ -38,14 +34,7 @@
         cursor="fuse: false; rayOrigin: mouse;"
         id="markerA"
       >
-        <a-entity
-          id="bowser-model"
-          gltf-model="#bowser"
-          position="0 0 0"
-          scale="1 1 1"
-          class="clickable"
-          gesture-handler
-        >
+        <a-image src="#my-image"></a-image>
         </a-entity>
       </a-marker>
       <a-entity camera></a-entity>
