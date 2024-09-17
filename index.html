@@ -23,7 +23,8 @@
       id="scene"
     >
      <a-assets>
-      <img id="my-image" src="image.jpg">
+      <img id="my-image" src="image.jpg" 
+          position="0 0 -1">
     </a-assets>
 
       <a-marker
@@ -34,8 +35,7 @@
         cursor="fuse: false; rayOrigin: mouse;"
         id="markerA"
       >
-        <a-image src="#my-image"
-          position="0 0 -1">
+        <a-image src="#my-image">
         </a-image>
       </a-marker>
       <a-entity camera></a-entity>
